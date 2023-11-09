@@ -297,7 +297,7 @@ class COMPersistencyScene: Managed
 	{
 		PersistencyPrint("COMPersistencyScene::CharacterRotationStart");
 		m_RotatingCharacter = true;
-		g_Game.GetMousePos(m_RotatingCharacterMouseX, m_RotatingCharacterMouseY);
+		GetMousePos(m_RotatingCharacterMouseX, m_RotatingCharacterMouseY);
 		if (m_DemoUnit) 
 		{
 			m_RotatingCharacterRot = m_DemoRot[0];

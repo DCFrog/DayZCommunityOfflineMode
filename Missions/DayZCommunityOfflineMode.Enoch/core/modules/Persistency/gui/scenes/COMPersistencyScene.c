@@ -297,7 +297,7 @@ class COMPersistencyScene: Managed
 	{
 		PersistencyPrint("COMPersistencyScene::CharacterRotationStart");
 		m_RotatingCharacter = true;
-		g_Game.GetMousePos(m_RotatingCharacterMouseX, m_RotatingCharacterMouseY);
+		GetMousePos(m_RotatingCharacterMouseX, m_RotatingCharacterMouseY);
 		if (m_DemoUnit) 
 		{
 			m_RotatingCharacterRot = m_DemoRot[0];
@@ -319,7 +319,7 @@ class COMPersistencyScene: Managed
 		int actual_mouse_x;
 		int actual_mouse_y;
 		float coef;
-		g_Game.GetMousePos(actual_mouse_x, actual_mouse_y);
+		GetMousePos(actual_mouse_x, actual_mouse_y);
 	
 		m_DiffX = m_RotatingCharacterMouseX - actual_mouse_x;
 		
